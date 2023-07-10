@@ -1,6 +1,6 @@
 <?php
 
-$envPath = __DIR__ . '/../.env';
+$envPath = __DIR__ . '/../../../.env';
 
 $xdebugExtension = extension_loaded('xdebug');
 if (!$xdebugExtension) {
@@ -11,7 +11,7 @@ if (!$xdebugExtension) {
 $startCodeCoverage = false;
 $projectRootPath = '';
 if (is_file($envPath)) {
-    $envs = file(__DIR__ . '/../.env');
+    $envs = file($envPath);
     foreach ($envs as $env) {
         if (str_starts_with($env, 'START_CODE_COVERAGE=')) {
             $startCodeCoverage = boolval(trim((explode('=', $env)[1])) ?? false);
