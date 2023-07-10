@@ -24,7 +24,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Pengbin\\CodeCoverage\\Providers\\CodeCoverageProvider.php"
+        "Pengbin\\CodeCoverage\\Providers\\CodeCoverageProvider"
       ]
     }
   }
