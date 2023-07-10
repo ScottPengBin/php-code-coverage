@@ -27,5 +27,10 @@
         "Pengbin\\CodeCoverage\\Providers\\CodeCoverageProvider"
       ]
     }
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "@php artisan vendor:publish --tag=code-coverage --force"
+    ]
   }
 }
