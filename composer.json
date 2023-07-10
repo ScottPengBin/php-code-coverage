@@ -20,5 +20,12 @@
     "phpunit/php-code-coverage": "^9.2",
     "ext-redis": "*",
     "ext-xdebug": "*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Pengbin\\CodeCoverage\\Providers\\CodeCoverageProvider.php"
+      ]
+    }
   }
 }
