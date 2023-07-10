@@ -17,17 +17,8 @@
   "require": {
     "php": "^8.0",
     "laravel/framework": "^8.0|^9.0|^10.0",
+    "phpunit/php-code-coverage": "^9.2",
     "ext-redis": "*",
     "ext-xdebug": "*"
-  },
-  "require-dev": {
-    "phpunit/php-code-coverage": "^9.2"
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "PengBin\\CodeCoverage\\Providers\\CodeCoverageServiceProvider"
-      ]
-    }
   }
 }
