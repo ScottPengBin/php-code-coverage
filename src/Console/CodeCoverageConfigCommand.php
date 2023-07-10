@@ -6,6 +6,7 @@ use Illuminate\Console\Command;
 
 class CodeCoverageConfigCommand extends Command
 {
+    protected $name = 'code_coverage:config';
     protected $signature = 'code_coverage:config';
 
     protected $description = '发布配置文件';
