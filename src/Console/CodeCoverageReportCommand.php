@@ -41,7 +41,7 @@ class CodeCoverageReportCommand extends Command
     public function handle(): int
     {
 
-        $this->path = config('code_coverage.report_data_path');
+        $this->path = config('code_coverage.report_data_path',public_path('code-coverage-report'));
 
         $make = $this->option('make');
 

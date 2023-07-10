@@ -3,6 +3,7 @@
 namespace Pengbin\CodeCoverage\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Pengbin\CodeCoverage\Console\CodeCoverageConfigCommand;
 use Pengbin\CodeCoverage\Console\CodeCoverageReportCommand;
 
 class CodeCoverageProvider extends ServiceProvider
@@ -11,7 +12,8 @@ class CodeCoverageProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                CodeCoverageReportCommand::class
+                CodeCoverageReportCommand::class,
+                CodeCoverageConfigCommand::class,
             ]);
         }
     }
