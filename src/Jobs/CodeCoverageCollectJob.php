@@ -1,6 +1,6 @@
 <?php
 
-namespace Jobs;
+namespace Pengbin\CodeCoverage\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -8,7 +8,6 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Redis;
-use function str_starts_with;
 
 
 class CodeCoverageCollectJob implements ShouldQueue

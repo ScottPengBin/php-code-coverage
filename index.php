@@ -37,7 +37,7 @@ if ($startCodeCoverage && !empty($projectRootPath)) {
     register_shutdown_function(function () {
         $coverageData = xdebug_get_code_coverage();
         xdebug_stop_code_coverage(true);
-        Jobs\CodeCoverageCollectJob::dispatch($coverageData);
+        Pengbin\CodeCoverage\Jobs\CodeCoverageCollectJob::dispatch($coverageData);
     });
 }
 
