@@ -33,7 +33,7 @@ class CodeCoverageCollectJob implements ShouldQueue
     public function handle(): void
     {
 
-        if(!self::$redisConnection->isConnected()){
+        if(empty(self::$redisConnection) || !self::$redisConnection->isConnected()){
             self::$redisConnection = Redis::connection()->client();
         }
 
